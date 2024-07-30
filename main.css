@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+}
+
+.header_box_logo {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.header_box_logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.header_box_logo span {
+  position: absolute;
+  right: 0;
+}
+
+.header_nav {
+  width: 40%;
+}
+
+#header_nav_menu {
+  display: none;
+}
+
+.header_nav_ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.header_nav_li {
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.header_nav_li:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #4aa5ff;
+}
+
+.header_nav_li a {
+  color: black;
+}
+
+.header_nav_link {
+  text-decoration: none;
+}
+
+.hero_container {
+  width: 100%;
+  height: 90vh;
+  background-image: url("https://avatars.mds.yandex.net/i?id=90bfd169c7cad219be36cc916b2433c2b42c1f55-3680494-images-thumbs&n=13");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+
+.hero_container i {
+  color: white;
+  width: 60%;
+  text-align: center;
+}
+
+main {
+  padding: 40px 0;
+}
+
+main p {
+  line-height: 30px;
+}
+
+@media only screen and (max-width: 700px) {
+  .header_nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .header_nav_ul {
+    display: none;
+  }
+  #header_nav_menu {
+    display: block;
+  }
+  .hero_container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-image: url("https://avatars.mds.yandex.net/i?id=3cf0fa5faa0f4bc6fdc495b2e22627e46adf0024-10868215-images-thumbs&n=13");
+  }
+  .hero_container i {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header_box_logo span {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
