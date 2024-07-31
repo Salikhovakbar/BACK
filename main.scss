@@ -17,6 +17,15 @@ header{
     background-color: white;
 }
 
+.sidebar_header{
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background: dodgerblue;
+    transition: 0.5s;
+}
+
 .header_box_logo{
     width: 30%;
     height: 100%;
